@@ -1,0 +1,248 @@
+#footer-thankyou,
+#footer-upgrade{
+	display: none;
+}
+
+.basepress_page_basepress_import_export .wrap{
+	min-width: 980px;
+}
+
+.basepress-tabs{
+	position: relative;
+	margin: 20px 0;
+}
+
+.basepress-tab{
+	width: 200px;
+	margin-bottom: 5px;
+}
+
+.basepress-tab-switch{
+	display: none;
+}
+
+.basepress-tab-label{
+	position: relative;
+	display: block;
+	min-height: 35px;
+	padding: 0 10px 0 12px;
+	border-left: 2px solid #bdc3c7;
+	line-height: 35px;
+	background: #fff;
+	box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+	cursor: pointer;
+}
+
+.basepress-tab-label:hover{
+	padding-left: 10px;
+	border-left: 4px solid #df3a3a;
+}
+
+.settings-title{
+	font-size: 2em;
+	line-height: 1;
+}
+
+.basepress-tab-content{
+	position: absolute;
+	top: 0;
+	left: 205px;
+	width: calc(100% - 265px);
+	min-height: 100%;
+	margin-bottom: 50px;
+	padding: 0 30px 30px;
+	background: #fff;
+	z-index: 1;
+	opacity: 0;
+	box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+	transition: opacity 0.5s;
+}
+
+input.basepress-tab-switch{
+	display: none !important;
+}
+
+.basepress-tab-switch:checked + .basepress-tab-label{
+	padding-left: 10px;
+	border-left: 4px solid #df3a3a;
+	font-weight: bold;
+	font-size: 1.1em;
+	background: #fff;
+	z-index: 2;
+}
+
+.basepress-tab-switch:checked + .basepress-tab-label + .basepress-tab-content{
+	opacity: 1;
+	transition: all 0.5s;
+	z-index: 3;
+}
+
+.basepress-tabs input[type="number"]{
+	width: 60px;
+}
+
+.basepress-tabs input[type="text"],
+.basepress-tabs textarea{
+	width: 27em;
+}
+
+#basepress-import-files hr{
+	margin: 3em 0;
+}
+
+.basepress-import-file{
+	display: table;
+	width: 100%;
+	margin-bottom: -1px;
+	padding: 5px;
+	border-spacing: 5px;
+	border: 1px solid #ddd;
+	background-color: #fff;
+	box-sizing: border-box;
+}
+
+.basepress-import-file:nth-child(2n+1){
+	background-color: #f9f9f9;
+}
+
+.basepress-import-file-extras,
+.basepress-import-file-name{
+	display: table-cell;
+}
+
+.basepress-import-file-extras{
+	text-align: right;
+}
+
+.basepress-import-file-download,
+.basepress-import-file-delete,
+#basepress-import-file-delete-all > span{
+	margin-left: 0.5em;
+	padding: 5px 10px;
+	border-radius: 20px;
+	background-color: #ccc;
+	color: #888;
+	cursor: pointer;
+}
+
+#basepress-import-file-delete-all > span:hover,
+.basepress-import-file-delete:hover,
+#basepress-import-file-delete-all > span:hover{
+	background-color: #df3a3a;
+	color: white;
+}
+
+#basepress-import-file-delete-all{
+	text-align: right;
+}
+
+
+.basepress-import-file-download:link,
+.basepress-import-file-download:visited,
+.basepress-import-file-download:active{
+	text-decoration: none;
+}
+
+.basepress-import-file-download:hover{
+	background-color: #3db814;
+	color: white;
+	text-decoration: none;
+}
+
+.basepress-tabs .dashicons-update:before{
+	display: inline-block;
+	animation: bs-loader 2s infinite linear;
+}
+
+#basepress-export,
+#basepress-import-new,
+#basepress-import-selected,
+#basepress-delete-data{
+	line-height: inherit;
+}
+
+#basepress-import-file-delete-all .dashicons-update:before{
+	vertical-align: initial;
+}
+
+.hidden-icon{
+	display: none;
+}
+
+
+.basepress-import-notice{
+	background: #df3a3a;
+	padding: 1em;
+	color: white;
+	border-radius: 4px;
+}
+
+.basepress-import-notice p{
+	margin: 0;
+	color: white;
+	font-size: 15px;
+}
+
+
+/* Progress Bar */
+
+.basepress-progress-bar {
+	width: 360px;
+	height: 15px;
+	margin: 20px 0;
+	padding: 1px;
+	border: 1px solid #777;
+	border-radius: 12px;
+	background-color: #fff;
+	box-sizing: border-box;
+}
+
+.basepress-progress-bar > span {
+	display: block;
+	position: relative;
+	height: 100%;
+	width: 0%;
+	border-radius: 6px;
+	background: #0074aa;
+	background: linear-gradient(to right, #7dbae8 0%, #0073a8 100%);
+	transition: width .25s ease-in-out;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.basepress-progress-bar > span > span {
+	content: "";
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+	background-image: linear-gradient(
+		-45deg,
+		rgba(255, 255, 255, .2) 25%,
+		transparent 25%,
+		transparent 49%,
+		rgba(255, 255, 255, .2) 50%,
+		rgba(255, 255, 255, .2) 74%,
+		transparent 75%,
+		transparent
+	);
+	background-size: 20px 20px;
+	animation: basepress-progress-bar 2s linear infinite;
+}
+
+@keyframes basepress-progress-bar {
+	0% {
+		background-position: 0 0;
+	}
+	100% {
+		background-position: 20px 0;
+	}
+}
+
+
+@keyframes bs-loader{
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}

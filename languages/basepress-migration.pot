@@ -1,0 +1,115 @@
+# BasePress POT
+# Copyright 2021
+# This file is distributed under the GNU General Public License v3 or later.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BasePress Migration Tools\n"
+"POT-Creation-Date: 2021-07-09 16:40+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Language-Team: BasePress <info@codesavory.com>\n"
+"Report-Msgid-Bugs-To: BasePress<info@codesavory.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Textdomain-Support: yesX-Generator: Poedit 1.6.4\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;esc_html_e;esc_html_x:1,2c;esc_html__;esc_attr_e;esc_attr_x:1,2c;esc_attr__;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_x:1,2c;_n:1,2;_n_noop:1,2;__ngettext:1,2;__ngettext_noop:1,2;_c,_nc:4c,1,2\n"
+"X-Poedit-Basepath: ..\n"
+"Language: en_US\n"
+"X-Generator: Poedit 2.4.2\n"
+"Language-Team: codesavory.com\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: basepress-migration.php:154 basepress-migration.php:210
+msgid "Migration Tools"
+msgstr ""
+
+#: basepress-migration.php:205
+msgid "Sorry, you are not allowed to access this page."
+msgstr ""
+
+#: basepress-migration.php:216 basepress-migration.php:223
+msgid "Export"
+msgstr ""
+
+#: basepress-migration.php:221
+msgid "Sets the amount of items processed at once. If the export fails lower this value and try again."
+msgstr ""
+
+#: basepress-migration.php:232
+msgid "Import"
+msgstr ""
+
+#: basepress-migration.php:236
+msgid "Make a backup of your site before importing so you can restore the site in case something goes wrong."
+msgstr ""
+
+#: basepress-migration.php:241
+msgid "Sets the amount of items processed at once. If the import fails lower this value and try again."
+msgstr ""
+
+#: basepress-migration.php:245
+msgid "Select the author used for the import if the exported user doesn't exist on this site."
+msgstr ""
+
+#: basepress-migration.php:251
+msgid "Import a new file"
+msgstr ""
+
+#: basepress-migration.php:253
+msgid "Import New"
+msgstr ""
+
+#: basepress-migration.php:255
+msgid "Import an archived file"
+msgstr ""
+
+#: basepress-migration.php:257
+msgid "Delete all"
+msgstr ""
+
+#: basepress-migration.php:262
+msgid "Import Selected"
+msgstr ""
+
+#: basepress-migration.php:269
+msgid "Delete all data"
+msgstr ""
+
+#: basepress-migration.php:273 basepress-migration.php:307
+msgid "Delete"
+msgstr ""
+
+#: basepress-migration.php:306
+msgid "Download"
+msgstr ""
+
+#: basepress-migration.php:314
+msgid "There are no files in the archive. Import a new file."
+msgstr ""
+
+#: basepress-migration.php:338
+msgid "No Authors found"
+msgstr ""
+
+#: basepress-migration.php:455
+msgid "File is too large. Max file size is"
+msgstr ""
+
+#: basepress-migration.php:558
+msgid "Data deleted successfully!"
+msgstr ""
+
+#: basepress-migration.php:561
+msgid "Something didn't work. Please try again."
+msgstr ""
+
+#: includes/exporter.php:174
+msgid "The export file could not be created. Make sure that files can be written in the uploads directory"
+msgstr ""
+
+#: includes/exporter.php:677
+msgid "Download Export File"
+msgstr ""
